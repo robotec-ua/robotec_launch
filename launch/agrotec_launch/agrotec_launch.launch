@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!--
+    The main launchfile of the project
+-->
+
+<launch>
+    <!-- Lightweight and simple local planning package for straight motion -->
+    <include file="$(find agrotec_launch)/launch/robotec_move_basic/robotec_move_basic.launch" />
+
+    <!-- Using EKF(Extended Kalman Filter) to estimate precise robot's position based on noised data from different sources -->
+    <include file="$(find agrotec_launch)/launch/robot_localization/robot_localization.launch" />
+
+    <!-- Publishing base_frame(robot's center) and map (robot's position on a map) using tf2 package for broadcasting -->
+    <include file="$(find agrotec_launch)/launch/robot_pose_publisher/robot_pose_publisher.launch" />
+
+    <!-- Using Mask RCNN package to detect weeds and crops -->
+    <include file="$(find agrotec_launch)/launch/robotec_mrcnn/robotec_mrcnn.launch" />
+
+    <!-- Publishing odom (data from odometry) frame using tf2 package for broadcasting -->
+    <include file="$(find agrotec_launch)/launch/robotec_odom_publisher/robotec_odom_publisher.launch" />
+
+    <!-- Creating instances of rosserial application to transfer data between devices using serial protocols -->
+    <include file="$(find agrotec_launch)/launch/rosserial_python/rosserial_python.launch" />
+
+    <!-- Creating tf2 transforms, that are used for estimating robot's current position and precise navigation -->
+    <include file="$(find agrotec_launch)/launch/tf2/tf2.launch" />
+</launch>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<!-- 
+    Creating instances of rosserial application to transfer data between devices using serial protocols 
+-->
+
+<launch>
+    <!-- -->
+	<node pkg="rosserial_python" name="rosserial" type="serial_node.py" output="screen">
+        <param name="port" value="/dev/ttyUSB0" />
+        <param name="baud" value="115200" />
+    </node>
+</launch>

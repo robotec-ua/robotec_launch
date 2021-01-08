@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>agrotec_launch</name>
+  <version>1.0.0</version>
+  <description>The main package dedicated to launching essential Agrotec package.</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <maintainer email="illya.shvarov@gmail.com">Illia Shvarov</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <license>Apache</license>
+
+  <!-- Author tags are optional, multiple are allowed, one per tag -->
+  <author email="illya.shvarov@gmail.com">Illia Shvarov</author>
+
+  <!-- The *depend tags are used to specify dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+<!--
+  <build_depend>tf2</build_depend>
+  <build_depend>pid</build_depend>
+  <build_depend>robotec_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>robotec_msgs</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>robotec_msgs</exec_depend>
+-->
+  <exec_depend>tf2</exec_depend>
+  <exec_depend>pid</exec_depend>
+  <exec_depend>robot_localization</exec_depend>
+  <exec_depend>robotec_msgs</exec_depend>
+  <exec_depend>robotec_mrcnn</exec_depend>
+  <exec_depend>robotec_image_filtering</exec_depend>
+  <exec_depend>robot_pose_publisher</exec_depend>
+  <exec_depend>rosserial_python</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+</package>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!--
+    Creating tf2 transforms, that are used for estimating robot's current position and precise navigation
+-->
+
+<launch>
+    <!-- Creating custom transformations -->
+    <!-- Example -->
+    <!-- 
+    <node pkg="tf2_ros" type="static_transform_publisher" name="<name>" args="x y z yaw pitch roll frame_id child_frame_id  period (milliseconds)" />
+    -->
+     <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_odom_publisher" args="0 0 0 0 0 0  /map /odom"/>
+</launch>

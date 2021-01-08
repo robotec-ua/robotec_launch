@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!--
+    Using EKF(Extended Kalman Filter) to estimate precise robot's position based on noised data from different sources
+-->
+
+<launch>
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization" clear_params="true" output="screen">
+    <rosparam command="load" file="$(find fobots)/param/ekf/ekf_localization_params.yaml" />
+    <remap from="odometry/filtered" to="odom"/>
+  </node>
+</launch>

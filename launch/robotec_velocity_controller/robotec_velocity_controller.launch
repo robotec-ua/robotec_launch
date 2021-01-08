@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- diff_drive_controller configuration file -->
+	<rosparam file="$(find agrotec_launch)/config/robotec_velocity_controller/diff_drive_controller.yaml" command="load"/>
+
+	<!-- Controller Spawner packages spawns diff_drive_controller -->
+	<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/"
+		args="
+			diff_drive_controller
+        "/>
+
+	<!-- Main node -->
+	<node name="robot_hardware_interface" pkg="robotec_velocity_controller" type="velocity_controller" output="screen"/>
+</launch>

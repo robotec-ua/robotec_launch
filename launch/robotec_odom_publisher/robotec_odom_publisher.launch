@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<!--
+    Publishing odom (data from odometry) frame using tf2 package for broadcasting
+-->
+
+<launch>
+    <!-- base_frame and odom->base_frame publisher -->
+    <node pkg="odom_publisher" name="odom_publisher_node" type="odom_publisher_node"/>
+</launch>
