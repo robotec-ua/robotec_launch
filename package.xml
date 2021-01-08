@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>agrotec_launch</name>
+  <name>robotec_launch</name>
   <version>1.0.0</version>
-  <description>The main package dedicated to launching essential Agrotec package.</description>
+  <description>The main package dedicated to launching essential Robotec packages.</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <maintainer email="illya.shvarov@gmail.com">Illia Shvarov</maintainer>

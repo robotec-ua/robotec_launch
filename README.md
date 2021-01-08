@@ -1,4 +1,4 @@
-# Agrotec robot launch package
+# Agrotec Robot Launch Package
 This is the package dedicated to start all the system of Robotec packages. All the parameters are stored here, so the packages doesn't need to be configurated.
 
 ## Table of contents

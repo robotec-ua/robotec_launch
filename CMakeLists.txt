@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(agrotec_launch)
+project(robotec_launch)
 
 ## Find catkin macros and libraries
 find_package(catkin REQUIRED COMPONENTS
