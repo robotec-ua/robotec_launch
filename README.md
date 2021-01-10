@@ -14,10 +14,12 @@ This is the package dedicated to start all the system of Robotec packages. All t
 │   └── robotec_velocity_controller
 │       └── diff_drive_controller.yaml
 ├── launch
-│   ├── agrotec_launch
-│   │   └── agrotec_launch.launch
+│   ├── gmapping
+│   │   └── gmapping.launch
 │   ├── pid
 │   │   └── pid.launch
+│   ├── robotec_launch
+│   │   └── robotec_launch.launch
 │   ├── robotec_move_basic
 │   │   └── robotec_move_basic.launch
 │   ├── robotec_mrcnn

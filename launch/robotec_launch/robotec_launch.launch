@@ -25,4 +25,7 @@
 
     <!-- Creating tf2 transforms, that are used for estimating robot's current position and precise navigation -->
     <include file="$(find robotec_launch)/launch/tf2/tf2.launch" />
+
+    <!-- Start a node for generating a map using laser scans -->
+    <include file="$(find robotec_launch)/launch/gmapping/gmapping.launch" />
 </launch>
